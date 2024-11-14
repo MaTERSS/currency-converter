@@ -38,7 +38,7 @@ namespace CSharplight
             double balanceInRub = 10000;
             double balanceInUsd = 100;
             double balanceInEur = 100;
-            int inputAmountCurrency;
+            double inputAmountCurrency;
 
 
             bool isWork = true;        
@@ -53,7 +53,7 @@ namespace CSharplight
                 {
                     case CommandShowFromRubToUSD:                          
                         Console.WriteLine("Введите сумму для конвертации:");
-                        inputAmountCurrency = Convert.ToInt32(Console.ReadLine());
+                        inputAmountCurrency = Convert.ToDouble(Console.ReadLine());
                                                 
                         if (inputAmountCurrency >= 0 && inputAmountCurrency <= balanceInRub) 
                         {
@@ -68,7 +68,7 @@ namespace CSharplight
 
                     case CommandShowFromRubToEur:
                         Console.WriteLine("Введите сумму для конвертации:");
-                        inputAmountCurrency = Convert.ToInt32(Console.ReadLine());
+                        inputAmountCurrency = Convert.ToDouble(Console.ReadLine());
 
                         if (inputAmountCurrency >= 0 && inputAmountCurrency <= balanceInRub)
                         {
@@ -83,7 +83,7 @@ namespace CSharplight
 
                     case CommandShowFromUSDToRub:
                         Console.WriteLine("Введите сумму для конвертации:");
-                        inputAmountCurrency = Convert.ToInt32(Console.ReadLine());
+                        inputAmountCurrency = Convert.ToDouble(Console.ReadLine());
 
                         if (inputAmountCurrency >= 0 && inputAmountCurrency <= balanceInUsd)
                         {
@@ -98,7 +98,7 @@ namespace CSharplight
 
                     case CommandShowFromUSDToEur:
                         Console.WriteLine("Введите сумму для конвертации:");
-                        inputAmountCurrency = Convert.ToInt32(Console.ReadLine());
+                        inputAmountCurrency = Convert.ToDouble(Console.ReadLine());
 
                         if (inputAmountCurrency >= 0 && inputAmountCurrency <= balanceInUsd)
                         {
@@ -113,7 +113,7 @@ namespace CSharplight
 
                     case CommandShowFromEurToRub:
                         Console.WriteLine("Введите сумму для конвертации:");
-                        inputAmountCurrency = Convert.ToInt32(Console.ReadLine());
+                        inputAmountCurrency = Convert.ToDouble(Console.ReadLine());
 
                         if (inputAmountCurrency >= 0 && inputAmountCurrency <= balanceInEur)
                         {
@@ -128,7 +128,7 @@ namespace CSharplight
 
                     case CommandShowFromEurToUSD:
                         Console.WriteLine("Введите сумму для конвертации:");
-                        inputAmountCurrency = Convert.ToInt32(Console.ReadLine());
+                        inputAmountCurrency = Convert.ToDouble(Console.ReadLine());
 
                         if (inputAmountCurrency >= 0 && inputAmountCurrency <= balanceInEur)
                         {
